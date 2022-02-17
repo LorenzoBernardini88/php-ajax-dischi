@@ -54,13 +54,14 @@ $database = [
     <title>Milestone1</title>
 </head>
 <body>
+
     <header class="head_cont">
         <div class="logo_cont">
             <img src="spotify_logo.png" alt="">
         </div>
     </header>
 
-    <div class="general" >
+    <main class="general" >
         <div  class="container">
                 <?php
                 foreach($database as $key => $valore){
@@ -73,10 +74,7 @@ $database = [
                 }
                 ?>
         </div>
-    </div>
+    </main>
+    
 </body>
 </html>
-        
-        
-        
-    
