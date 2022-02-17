@@ -43,6 +43,18 @@
             'genre' => 'Rock'
         ]
     ];
+    $dataGeneri=[];
+    foreach($database as $key => $valore){
+        $dataGeneri = $valore['genre'];
+        if(!empty($dataGeneri)){
+            $database = $dataGeneri ;
+            
+        }
+    }
+    // if getPassato !empty aggiorna $database
+    
     header('Content-Type: application/json');
     echo json_encode($database);  
+
+
 ?>

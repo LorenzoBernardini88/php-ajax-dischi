@@ -5,14 +5,19 @@ const myApp = new Vue ({
     },
     mounted: function(){
                 
-                axios.get('http://localhost:8888/php-ajax-dischi/milestone2/api.php')
-                .then((risposta) =>  {
-                    this.dataAlbum = risposta.data;
-                    })
-                .catch(function (error) {
-                        
-                        console.log(error);
-                    })
+        axios.get('http://localhost:8888/php-ajax-dischi/milestone2/api.php',{
+            // params: {
+            //     ID: 12345
+            // }
+        })
+        .then((risposta) =>  {
+            this.dataAlbum = risposta.data;
+            })
+        .catch(function (error) {
+                
+                console.log(error);
+            })
     },
     
 })
+
