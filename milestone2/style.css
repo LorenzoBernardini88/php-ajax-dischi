@@ -1,0 +1,67 @@
+@import url('https://fonts.googleapis.com/css2?family=Roboto:wght@100;300;400;500;700&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family:'Roboto', sans-serif ;
+    font-size: 20px;
+    background: #1E2D3B;
+}
+/* HEADER */
+.head_cont {
+    background: #2E3A46;
+    padding: 5px 10px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    
+}
+.head_cont img{
+    height: 50px;
+    width: 50px;
+}
+/* MAIN */
+.general{
+    text-align: center;
+}
+.container{
+    max-width:1000px ;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 30px;
+    padding: 50px 0;
+}
+.card{
+    text-align: center;
+    background: #2E3A46;
+    width: calc((100% - 150px) / 6);
+    padding: 10px 10px 40px 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.card img{
+    width: 90%;
+}
+    
+.album_title{
+margin-top: 10px;
+color:#FCF1DB;
+text-transform: uppercase;
+font-weight: bold;
+font-size: 15px;
+}
+.album_author{
+    margin-top:10px;
+}
+.album_author,
+.album_year{
+    color: #6B7F7D;
+    font-size: 12px;
+}
+

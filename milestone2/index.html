@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script> 
+    <link rel="stylesheet" href="style.css">
+    <title>Milestone1</title>
+</head>
+<body>
+    <div id="app">
+        <header class="head_cont">
+            <div class="logo_cont">
+                <img src="spotify_logo.png" alt="">
+            </div>
+        </header>
+    
+        <main class="general" >
+            <div  class="container">
+                <div v-for="elemento in dataAlbum" class="card">
+                    <img :src="elemento.poster">
+                    <span class="album_title">{{elemento.title}}</span>
+                    <span class="album_author">{{elemento.author}}</span>
+                    <span class="album_year" >{{elemento.year}}</span>
+                </di>    
+            </div>
+        </main>
+    </div>
+    
+
+    
+    <script src="https://cdn.jsdelivr.net/npm/vue@2/dist/vue.js"></script>
+    <script src="myscript.js"></script>
+</body>
+</html>
