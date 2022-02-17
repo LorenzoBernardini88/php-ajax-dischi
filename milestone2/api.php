@@ -46,10 +46,10 @@
     $dataGeneri=[];
     foreach($database as $key => $valore){
         $dataGeneri = $valore['genre'];
-        if(!empty($dataGeneri)){
-            $database = $dataGeneri ;
-            
-        }
+    }
+    if(!empty($dataGeneri)){
+        $database = $dataGeneri ;
+        
     }
     // if getPassato !empty aggiorna $database
     
