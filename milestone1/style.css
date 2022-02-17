@@ -10,15 +10,7 @@ body{
     font-size: 20px;
     background: #1E2D3B;
 }
-.container{
-    max-width:1000px ;
-    margin:0 auto;
-    display: flex;
-    flex-wrap: wrap;
-    justify-content: space-between;
-    gap: 20px 30px;
-    padding: 50px 0;
-}
+/* HEADER */
 .head_cont {
     background: #2E3A46;
     padding: 5px 10px;
@@ -31,9 +23,18 @@ body{
     height: 50px;
     width: 50px;
 }
-
+/* MAIN */
 .general{
     text-align: center;
+}
+.container{
+    max-width:1000px ;
+    margin:0 auto;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    gap: 20px 30px;
+    padding: 50px 0;
 }
 .card{
     text-align: center;
@@ -63,3 +64,4 @@ font-size: 15px;
     color: #6B7F7D;
     font-size: 12px;
 }
+
